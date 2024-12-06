@@ -47,8 +47,8 @@ section {
 }
 
 .header__info_abot_company {
-  border-right: solid 1px #a78bfa;
   text-align: end;
+  border-right: solid 1px #a78bfa;
 }
 
 .header__info {
@@ -92,10 +92,10 @@ section {
 
 .nav__item-button {
   background-color: #a78bfa;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   margin-left: auto;
-  border-radius: 5px;
   padding: 10px 28px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 .nav__item-button .nav__link {
   color: white;
