@@ -131,4 +131,64 @@ section {
 .info__img {
   width: 505px;
   height: 232px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
+  padding-top: 24px;
+}
+
+.calculator__about {
+  text-align: center;
+}
+
+.calculator__name {
+  color: #111827;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  padding-bottom: 16px;
+}
+
+.calculator__info {
+  padding-bottom: 28px;
+}
+
+.calculator__input {
+  width: 606px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.calculator__input input {
+  padding: 12px;
+  border-radius: 4px;
+  border: 2px solid #111827;
+}
+.calculator__input input:not(.calculator__streach) {
+  padding: 12px;
+  flex-basis: 43.4%;
+}
+.calculator__input button {
+  border: none;
+  border-radius: 4px;
+  background: #8b5cf6;
+  padding: 10px 28px;
+  color: white;
+}
+
+.calculator__btn:hover {
+  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.5);
+  background-color: #8b5cf6;
+  transform: translateY(-4px);
+}
+
+.calculator__streach {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
