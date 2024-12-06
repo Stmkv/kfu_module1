@@ -185,6 +185,11 @@ section {
   color: white;
 }
 
+.calculator__btn {
+  transition: box-shadow 0.3s ease;
+  transition: 0.3s;
+}
+
 .calculator__btn:hover {
   box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.5);
   background-color: #8b5cf6;
@@ -199,6 +204,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 48px;
 }
 .advantages .advantages__title {
   color: #111827;
@@ -231,4 +237,66 @@ section {
 .advantages__img {
   width: 113px;
   height: 113px;
+}
+
+.guarantee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guarantee__info {
+  width: 80%;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.guarantee__confirmation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.guarantee__confirmation .guarantee__card-text {
+  padding-top: 4px;
+  text-align: center;
+  color: #111827;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.guarantee__img {
+  align-self: stretch;
+  height: 375px;
+}
+
+.guarantee__card {
+  width: 400px;
+}
+
+.guarantee__title {
+  color: #111827;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 36px;
+}
+
+.guarantee__more {
+  padding: 16px 28px;
+  margin-top: 36px;
+  border-radius: 12px;
+  background: #8b5cf6;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 24px;
+  transition: box-shadow 0.3s ease;
+  transition: 0.3s;
+}
+
+.guarantee__more:hover {
+  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.5);
+  background-color: #8b5cf6;
+  transform: translateY(-4px);
 }/*# sourceMappingURL=style.css.map */
