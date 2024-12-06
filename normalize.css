@@ -19,6 +19,10 @@ html {
 /**
    * Remove the margin in all browsers.
    */
+h1 {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   margin: 0;
@@ -39,7 +43,7 @@ main {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /* Grouping content
@@ -348,4 +352,13 @@ template {
 
 [hidden] {
   display: none;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }

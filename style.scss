@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+p {
+  font-family: Montserrat, serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+}
+.header__about {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: auto;
+  .text_logo {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+  }
+}
+
+.header__info_abot_company {
+  border-right: solid 1px #a78bfa;
+  text-align: end;
+}
+
+.header__info {
+  margin-right: 12px;
+  line-height: 24px;
+}
+
+.header__phone {
+  margin-left: 12px;
+  .header__phone-info_text {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .header__phone-info {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 36px;
+  }
+}
+// навигационная панель
+
+.nuv__list {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  gap: 24px;
+}
+
+.nav__item {
+  list-style: none;
+  transition: box-shadow 0.3s ease;
+  transition: 0.3s;
+  .nav__link {
+    color: #111827;
+    font-weight: 700;
+  }
+}
+
+.nav__link:not(.nav__link-btn):hover {
+  color: #8b5cf6;
+}
+
+.nav__item-button {
+  background-color: #a78bfa;
+  .nav__link {
+    color: white;
+  }
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  border-radius: 5px;
+  padding: 10px 28px;
+}
+
+.nav__item-button:hover {
+  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.5);
+  background-color: #8b5cf6;
+  transform: translateY(-4px);
+}
