@@ -348,3 +348,49 @@ section {
 
   transform: translateY(-4px);
 }
+
+.carousel {
+  width: 450px;
+  height: 350px;
+
+  padding-top: 32px;
+  margin: auto;
+}
+
+.corusel-custom__title {
+  text-align: center;
+  padding-top: 48px;
+}
+
+.carousel-item {
+  background-color: white;
+
+  border-radius: 16px;
+  padding: 25px 70px;
+}
+
+.corusel-custom__text {
+  font-weight: 700;
+  line-height: 28px;
+  font-size: 18px;
+  color: #111827;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: white; /* Цвет стрелок */
+  border-radius: 50%; /* Сделать стрелки круглыми */
+}
+
+.corusel-custom__author {
+  display: flex;
+  justify-content: space-between;
+}
+
+.corusel-custom__name {
+  align-self: flex-end;
+}
+
+.corusel-custom {
+  padding-bottom: 40px;
+}
