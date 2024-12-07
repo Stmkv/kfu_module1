@@ -4,10 +4,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const totalSlides = slides.length
   let currentIndex = 0
 
-  function moveSlider() {
-    currentIndex = (currentIndex + 1) % totalSlides
+  function updateSlider() {
     track.style.transform = `translateX(-${currentIndex * 100}%)`
   }
 
-  setInterval(moveSlider, 3000)
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides
+    updateSlider()
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides
+    updateSlider()
+  }
+
+  const interval = setInterval(nextSlide, 3000)
+
+  const prevButton = document.querySelector('.reviews-slider__button--prev')
+  const nextButton = document.querySelector('.reviews-slider__button--next')
+
+  prevButton.addEventListener('click', () => {
+    clearInterval(interval)
+    prevSlide()
+  })
+
+  nextButton.addEventListener('click', () => {
+    clearInterval(interval)
+    nextSlide()
+  })
 })

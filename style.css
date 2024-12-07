@@ -330,7 +330,7 @@ body {
 .reviews-slider__slide {
   min-width: 100%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 50px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -362,7 +362,7 @@ body {
   color: #111827;
   font-size: 30px;
   font-weight: 900;
-  line-height: 36px; /* 120% */
+  line-height: 36px;
 }
 
 .reviews-slider__quot {
@@ -370,6 +370,35 @@ body {
   justify-content: space-between;
   justify-content: baseline;
   flex-direction: row-reverse;
+}
+
+.reviews-slider__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.reviews-slider__button--prev {
+  left: 10px;
+}
+
+.reviews-slider__button--next {
+  right: 10px;
+}
+
+.reviews-slider__button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .questions {
