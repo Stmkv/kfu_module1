@@ -461,8 +461,11 @@ body {
 }
 
 .footer {
-  background: #111827;
+  width: 1024px;
   margin-top: 48px;
+  background: #111827;
+  margin: auto;
+  padding-bottom: 40px;
 }
 
 .footer__nav {
@@ -545,4 +548,10 @@ body {
 
 .footer__oferta-right {
   width: 40%;
+}
+
+.footer__background {
+  width: 100%;
+  background: #111827;
+  margin-top: 48px;
 }/*# sourceMappingURL=style.css.map */
