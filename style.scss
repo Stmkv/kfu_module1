@@ -22,15 +22,27 @@ section {
   margin-right: auto;
 }
 
+body {
+  background-color: #e5e7eb;
+}
+
 // Header
 
 .header {
   width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-bottom: 24px;
+
+  background-color: white;
 }
+
+.section-header {
+  background-color: white;
+}
+
 .header__about {
   display: flex;
   justify-content: space-between;
@@ -128,6 +140,8 @@ section {
 
   padding-top: 48px;
   padding-bottom: 40px;
+
+  background-color: #e5e7eb;
 }
 
 .info__p-bold {
@@ -330,6 +344,7 @@ section {
 .guarantee__more {
   padding: 16px 28px;
   margin-top: 36px;
+  margin-bottom: 48px;
 
   border-radius: 12px;
   background: #8b5cf6;
@@ -351,47 +366,131 @@ section {
 
 // Корусель bootstrap
 
-.carousel {
-  width: 450px;
-  height: 350px;
+.reviews-slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  margin: 0 auto;
 
-  padding-top: 32px;
-  margin: auto;
+  padding-bottom: 48px;
 }
 
-.corusel-custom__title {
-  text-align: center;
-  padding-top: 48px;
-}
-
-.carousel-item {
-  background-color: white;
-
-  border-radius: 16px;
-  padding: 25px 70px;
-}
-
-.corusel-custom__text {
-  font-weight: 700;
-  line-height: 28px;
-  font-size: 18px;
-  color: #111827;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: white;
-}
-
-.corusel-custom__author {
+.reviews-slider__track {
   display: flex;
-  justify-content: space-between;
+  transition: transform 0.5s ease-in-out;
 }
 
-.corusel-custom__name {
+.reviews-slider__slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.reviews-slider__img {
   align-self: flex-end;
 }
 
-.corusel-custom {
-  padding-bottom: 40px;
+.reviews-slider__text {
+  margin-bottom: 10px;
+
+  color: #111827;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.reviews-slider__author {
+  font-size: 16px;
+  color: #6b7280;
+  font-weight: 300;
+  line-height: 24px;
+
+  align-self: flex-end;
+}
+
+.reviews-slider__title {
+  text-align: center;
+
+  color: #111827;
+
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 36px; /* 120% */
+}
+
+.reviews-slider__quot {
+  display: flex;
+
+  justify-content: space-between;
+  justify-content: baseline;
+  flex-direction: row-reverse;
+}
+
+// Форма вопросов
+
+.questions {
+  width: 900px;
+  background-color: white;
+  margin: auto;
+
+  border-radius: 16px;
+}
+.questions__title {
+  text-align: center;
+
+  color: #111827;
+
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 36px;
+  padding-top: 64px;
+}
+.questions__input {
+  width: 606px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  gap: 24px;
+}
+.questions__item {
+  width: 36.5%;
+  padding: 12px;
+  flex-shrink: 0;
+}
+.questions__textarea {
+  width: 497px;
+  height: 150px;
+  padding: 12px;
+}
+
+.questions__btn {
+  margin-top: 4px;
+  padding: 10px 28px;
+  width: 86%;
+
+  text-align: center;
+  border: #8b5cf6;
+  border-radius: 4px;
+  background: #8b5cf6;
+
+  color: #f9fafb;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.questions__btn:hover {
+  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.5);
+  background-color: #8b5cf6;
+
+  transition: 0.3s;
+  transform: translateY(-4px);
 }
