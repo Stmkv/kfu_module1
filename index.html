@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,11 +30,17 @@
         <nav class="nav">
           <ul class="nuv__list">
             <li class="nav__item">
-              <a href="" class="nav__link">Калькулятор</a>
+              <a href="#calk" class="nav__link">Калькулятор</a>
             </li>
-            <li class="nav__item"><a href="" class="nav__link">О нас</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Гарантии</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Отзывы</a></li>
+            <li class="nav__item">
+              <a href="#inf" class="nav__link">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="#guarantee" class="nav__link">Гарантии</a>
+            </li>
+            <li class="nav__item">
+              <a href="#reviews" class="nav__link">Отзывы</a>
+            </li>
             <li class="nav__item nav__item-button">
               <a href="" class="nav__link nav__link-btn">Оставить заявку</a>
             </li>
@@ -44,7 +50,7 @@
     </div>
     <main class="main">
       <section>
-        <div class="info">
+        <div class="info" id="inf">
           <div class="info__text">
             <p class="info__p-bold">
               Без проблемная доставка купленных вещей из США, Европы и Азии в
@@ -64,7 +70,7 @@
         </div>
       </section>
       <section>
-        <div class="calculator">
+        <div class="calculator" id="calc">
           <div class="calculator__about">
             <p class="calculator__name">Калькулятор доставки</p>
             <p class="calculator__info">
@@ -184,7 +190,7 @@
         </div>
       </section>
       <section>
-        <div class="guarantee">
+        <div class="guarantee" id="guarantee">
           <h2 class="guarantee__title">Гарантии качества</h2>
           <p class="guarantee__info">
             Наши гарантии качества включают в себя полный спектр документов,
@@ -238,7 +244,7 @@
         </div>
       </section>
       <section>
-        <div class="reviews-slider">
+        <div class="reviews-slider" id="reviews">
           <h2 class="reviews-slider__title">Отзывы</h2>
           <div class="reviews-slider__track">
             <div class="reviews-slider__slide">
@@ -293,13 +299,29 @@
         <div class="questions">
           <h2 class="questions__title">Остались вопросы</h2>
           <form class="questions__input" method="get" action="#">
-            <input type="text" class="questions__item" placeholder="Имя" />
-            <input type="text" class="questions__item" placeholder="Почта" />
-            <input type="text" class="questions__item" placeholder="Телефон" />
+            <input
+              type="text"
+              class="questions__item"
+              placeholder="Имя"
+              required
+            />
+            <input
+              type="text"
+              class="questions__item"
+              placeholder="Почта"
+              required
+            />
+            <input
+              type="text"
+              class="questions__item"
+              placeholder="Телефон"
+              required
+            />
             <input
               type="text"
               class="questions__item"
               placeholder="Тема вопроса"
+              required
             />
             <textarea
               name=""
