@@ -411,6 +411,7 @@ body {
 
 .questions__btn {
   margin-top: 4px;
+  margin-bottom: 64px;
   padding: 10px 28px;
   width: 86%;
   text-align: center;
@@ -428,4 +429,30 @@ body {
   background-color: #8b5cf6;
   transition: 0.3s;
   transform: translateY(-4px);
+}
+
+.footer {
+  background: #111827;
+  margin-top: 48px;
+}
+
+.footer__nav {
+  display: flex;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.footer__logo-text {
+  color: #f9fafb;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.nav__link-f {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
